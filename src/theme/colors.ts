@@ -4,4 +4,5 @@ export const colors = {
   zureLightBlue: '#3ce3fb',
   zureFrozenBlue: '#05c3de',
   zureFrozenBlue50: 'rgba(5, 195, 222, 0.5)',
+  zureAqua: '#7decfc',
 };

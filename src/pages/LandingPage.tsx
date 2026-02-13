@@ -5,12 +5,14 @@ import Button from '../components/Button';
 import ZureLogo from '../components/ZureLogo';
 import heroImg from '../assets/images/hero-img2.png';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function LandingPage() {
   const [showBackground, setShowBackground] = useState(false);
   const [showText, setShowText] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Background image fades in first
@@ -175,7 +177,7 @@ export default function LandingPage() {
               transition: 'opacity 0.8s ease-in-out',
             }}
           >
-            <Button>Start your journey</Button>
+            <Button onClick={() => navigate('/overview')}>Start your journey</Button>
           </div>
         </div>
       </div>
